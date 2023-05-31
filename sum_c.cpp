@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
 	std::printf("sum: %f", sum_value);
 
 	// deallocate memory
-	delete numbers;
+	delete [] numbers;
 	
 	return 0;
 }
