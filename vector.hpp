@@ -3,13 +3,14 @@
 
 namespace base {
 
+template <typename T>
 class vector
 {
 	public:
 
 		// constructor
 		vector (size_t n) {
-			rep = new double[n];			
+			rep = new T[n];
 		}
 
 		// destructor
@@ -17,13 +18,13 @@ class vector
 			delete [] rep;
 		}
 
-		double& operator[](size_t i) {
+		T& operator[](size_t i) {
 			return rep[i];
 		}
 
 	private:
 
-		double* rep;
+		T* rep;
 };
 
 }

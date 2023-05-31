@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 
 	// ignore first argument
 	size_t n = argc - 1;
-	base::vector numbers(n);
+	base::vector<double> numbers(n);
 	for (size_t i = 0; i < n; ++i) {
 		std::string s = argv[i+1];
 		numbers[i] = std::stod(s);
