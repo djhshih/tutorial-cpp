@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 int main(int argc, char** argv) {
 
@@ -10,7 +11,7 @@ int main(int argc, char** argv) {
 
 	// ignore first argument
 	size_t n = argc - 1;
-	double* numbers = new double[n];
+	std::vector<double> numbers(n);
 	for (size_t i = 0; i < n; ++i) {
 		std::string s = argv[i+1];
 		numbers[i] = std::stod(s);
@@ -25,8 +26,5 @@ int main(int argc, char** argv) {
 	// print the result
 	std::cout << "sum: " << sum_value << std::endl;
 
-	// deallocate memory
-	delete [] numbers;
-	
 	return 0;
 }
