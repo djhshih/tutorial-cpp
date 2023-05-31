@@ -2,9 +2,9 @@
 
 # cython function declaration
 cdef extern from "src/fib.cpp" namespace "math":
-    int _fib(int n)
+    int fib_cpp(int n)
 
 # python wrapper
 def fib(n):
-    return _fib(n)
+    return fib_cpp(n)
 
