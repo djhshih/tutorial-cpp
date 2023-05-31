@@ -6,7 +6,7 @@
  */
 int main(int argc, char** argv) {
 
-  // if command line argument is: sum 1 2.5
+	// if command line argument is: sum 1 2.5
 	// then argv representation is an array of an array:
 	// [ ['s', 'u', 'm'], ['1'], ['2', '.', '5'] ]
 
