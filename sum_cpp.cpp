@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include "vector.hpp"
 
 int main(int argc, char** argv) {
 
@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 
 	// ignore first argument
 	size_t n = argc - 1;
-	std::vector<double> numbers(n);
+	base::vector numbers(n);
 	for (size_t i = 0; i < n; ++i) {
 		std::string s = argv[i+1];
 		numbers[i] = std::stod(s);
